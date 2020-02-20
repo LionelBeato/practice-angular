@@ -7,10 +7,9 @@ import { NaviComponent } from './navi/navi.component';
 
 
 const routes: Routes = [
-  {path: 'other', component: OtherComponent},
   {path: '', component: NaviComponent},
+  {path: 'testing', component: NaviComponent},
   {path: 'error', component: ErrorComponent}
-
 ];
 
 @NgModule({

@@ -34,7 +34,6 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     ErrorComponent,
     NaviComponent,
-    OthernavComponent
   ],
   imports: [
     MatSliderModule,
