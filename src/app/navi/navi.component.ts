@@ -16,13 +16,16 @@ export class NaviComponent {
     .pipe(
       map(result => result.matches),
       shareReplay()
-    );
+  );
 
-
-  constructor( private router:Router, private breakpointObserver: BreakpointObserver) {}
+  constructor(private router:Router, private breakpointObserver: BreakpointObserver) {}
   
   isHomeRoute() {
-    return this.router.url === '/testing';
+    return this.router.url === '/home';
+  }
+
+  isFormRoute() {
+    return this.router.url === '/form';
   }
   
   

@@ -8,7 +8,8 @@ import { NaviComponent } from './navi/navi.component';
 
 const routes: Routes = [
   {path: '', component: NaviComponent},
-  {path: 'testing', component: NaviComponent},
+  {path: 'form', component: NaviComponent},
+  {path: 'home', component: NaviComponent},
   {path: 'error', component: ErrorComponent}
 ];
 
