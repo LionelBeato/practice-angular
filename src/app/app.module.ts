@@ -23,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FormComponent } from './form/form.component';
 import {MatCardModule} from '@angular/material/card';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,12 +45,14 @@ import {MatCardModule} from '@angular/material/card';
     BrowserModule,
     MatGridListModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     LayoutModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    FormsModule,
     MatCardModule,
   ],
   providers: [],

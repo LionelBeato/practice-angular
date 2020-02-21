@@ -1,3 +1,11 @@
+<form [formGroup]="personForm" (ngSubmit)="showInfo()">
+
+    <label>
+        Name:
+        <input type='text' formControlName='name'>
+    </label>
+</form>
+    
 <app-hero></app-hero>
  <app-main></app-main>
  <app-footer></app-footer>
