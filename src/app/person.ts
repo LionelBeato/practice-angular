@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
 export class Person {
 
-    constructor(){}
+    name:string
+
+    constructor(name?:string){
+        this.name = name
+    }
 
 }

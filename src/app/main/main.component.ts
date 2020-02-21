@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonService } from '../person.service'
 import { Person } from '../person'
+import { people } from '../people'
 
 
 
@@ -11,14 +12,11 @@ import { Person } from '../person'
 })
 export class MainComponent implements OnInit {
 
-  people: Person[] = [
-    
-  ]
 
 
   getPeeps(){
     this.personService.getPeople()
-    .subscribe(p => this.people = p)
+    .subscribe(p => console.log(p))
   }
 
   getJson(){
@@ -33,6 +31,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
     console.log('this component works')
    this.getJson()
+   this.getPeeps()
   }
 
 }
