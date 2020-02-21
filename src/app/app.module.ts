@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NameComponent } from './name/name.component';
@@ -39,6 +39,7 @@ import {MatCardModule} from '@angular/material/card';
     FormComponent,
   ],
   imports: [
+    HttpClientModule,
     MatSliderModule,
     MatToolbarModule,
     BrowserModule,
